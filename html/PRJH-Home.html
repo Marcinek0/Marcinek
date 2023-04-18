@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      defer
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      defer
+    ></script>
+    <script src="../script/PRJJ.js" defer></script>
+    <link rel="stylesheet" href="../css/PRJC-Home.css" />
+  </head>
+  <body>
+    
+    <nav>
+      <div id="logo">
+        
+      </div>
+      <div id="menu">
+        <ul>
+          <li class="list active">
+            <a href="PRJH-Home.html">
+              <span class="icon">
+                <ion-icon name="home-outline"></ion-icon>
+              </span>
+              <span class="text">Home</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="../html/PRJH-Profil.html">
+              <span class="icon">
+                <ion-icon name="person-outline"></ion-icon>
+              </span>
+              <span class="text">Profil</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="../html/PRJH-O nas.html">
+              <span class="icon"
+                ><ion-icon name="chatbubble-outline"></ion-icon
+              ></span>
+              <span class="text">O nas</span>
+            </a>
+          </li>
+          
+          <li class="list">
+            <a href="../html/PRJH-Oferta.html">
+              <span class="icon"
+                ><ion-icon name="layers-outline"></ion-icon
+              ></span>
+              <span class="text">Oferta</span>
+            </a>
+          </li>
+          <li class="list">
+            <a href="../html/PRJH-Galeria.html">
+              <span class="icon"
+                ><ion-icon name="camera-outline"></ion-icon
+              ></span>
+              <span class="text">Galeria</span>
+            </a>
+          </li>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+      <div id="social_media">
+      <a href="#">
+        <span class="icon2">
+          <ion-icon name="person-outline"></ion-icon>
+        </span></a>
+      <a href="#">
+        <span class="icon2">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </span></a>
+        <a href="#">
+        <span class="icon2">
+          <ion-icon name="mail"></ion-icon>
+        </span></a>
+      </div>
+    </nav>
+    <div id="full_size_photo"> 
+      <div id="call_to_action">
+       <a href="../html/PRJH-Zdjęcia.html">See more</a>
+      </div>
+    </div>
+    <div id="text">
+      <h1>Witamy w MarcinStolarz!</h1>
+      <p>Cenimy – profesjonalizm i fachowość. Możesz na nas liczyć, jeśli potrzebujesz: drzwi wewnętrznych czy wejściowych, okien, rolet zewnętrznych i materiałowych, bram garażowych. Potrzebne ogrodzenie, żaluzje, klamki, a może... parapet? Nie ma problemu.  Z nami naprawdę wiele jest możliwe! Ponieważ profesjonalizm to wartość przez nas wyznawana i ceniona, w naszym punkcie sprzedaży spotkasz również tylko najlepsze firmy. Współpracujemy z takimi czołowymi markami branży, jak: D.R.Ee., Pol-Skonee, Asiloo, Inter-Doorr, Wiśniowskii, KMTt, AFBb, Portoss, Stollarr, Witrażż, Abakuss, Mercorr, Gipsy-Kingss</p>
+    </div>
+    <div class="parallax"></div>
+    <div id="oferta">
+      <div id="oferta_text">
+        <h1><em><a href="../html/PRJH-Oferta.html">Nasza oferta!</a></em></h1>
+      </div>
+        <div id="oferta_blocks">
+          <div class="block"><a href="#"><img src="../img/okna.png" alt="OKNA"></a><b>OKNA</b></div>
+          <div class="block"><a href="#"><img src="../img/bramy.png" alt="BRAMY"></a><b>BRAMY</b></div>
+          <div class="block"><a href="#"><img src="../img/drzwi.png" alt="DRZWI"></a><b>DRZWI</b></div>
+        </div>
+      </div>
+      <form class="form" id="contactForm" method="post">
+        <div class="form_row">
+            <label for="field-name">Name</label>
+            <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole" pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+        </div>
+        <div class="form_row">
+            <label for="field-email">Email</label>
+            <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email" pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+        </div>
+        </div>
+        <div class="form_row">
+            <button type="submit" class="submit-btn">
+                Wyślij
+            </button>
+        </div>
+    </form>
+    <div id="bottom_space">
+      <div id="gallery"> 
+          <div class="carusel">
+            <input type="radio" id="car0" name="car" checked="checked"/>
+            <div></div> 
+            
+            <input type="radio" id="car1" name="car"/>
+            <div>
+              <label class="carusel__arrow" for="car0"></label>
+              <div class="carusel__item" style="background-image: url(../img/Drewno1.jfif)"></div>
+            </div>
+            
+            <input type="radio" id="car2" name="car"/>
+            <div>
+              <label class="carusel__arrow" for="car1"></label>
+              <div class="carusel__item" style="background-image: url(../img/Drewno2.jfif)"></div>
+            </div>
+            
+            <input type="radio" id="car3" name="car"/>
+            <div>
+              <label class="carusel__arrow" for="car2"></label>
+              <div class="carusel__item" style="background-image: url(../img/Drewno3.jfif)"></div>
+            </div>
+          </div>
+          <div id="gallery_photos">
+            <div class="gphoto"><img src="../img/galeria1.jfif"></div>
+            <div class="gphoto"><img src="../img/galeria2.jfif"></div>
+            <div class="gphoto"><img src="../img/galeria3.jpg"></div>
+            <div class="gphoto"><img src="../img/galeria4.jpg"></div>
+          </div>
+        </div>
+        <div class="everything-photo-right">
+          <ul>
+            <li style="--i:5;"><a href="../html/PRJH-Home.html">Home</a></li>
+            <li style="--i:4;"><a href="../html/PRJH-Profil.html">Profil</a></li>
+            <li style="--i:3;"><a href="../html/PRJH-O nas.html">O nas</a></li>
+            <li style="--i:2;"><a href="../html/PRJH-Oferta.html">Oferta</a></li>
+            <li style="--i:1;"><a href="../html/PRJH-Galeria.html">Galeria</a></li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+    
+    <footer>
+      <div id="fmenu">
+        <a class="active" href="PRJH-Home.html">Home</a>
+        <a href="PRJH-Profil.html">Profil</a>
+        <a href="PRJH-O nas.html">O nas</a>
+        <a href="PRJH-Oferta.html">Oferta</a>
+        <a href="PRJH-Galeria.html">Galeria</a>
+      </div>
+      <div id="ftext">
+          Copyright 1999-2023 by Refsnes Data. All Rights Reserved.
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
+  </body>
+</html>

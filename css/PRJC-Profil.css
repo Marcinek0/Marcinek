@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --clr: #222327;
+  --back: rgb(233, 223, 223);
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--back);
+}
+#menu {
+  width: 400px;
+  height: 70px;
+  background: var(--clr);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border-radius: 10px;
+  margin: 2rem auto 2rem auto;
+}
+#menu ul {
+  display: flex;
+  width: 350px;
+}
+#menu ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+#menu ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+#menu ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--back);
+}
+#menu ul li a .text {
+  position: absolute;
+  color: var(--back);
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+#menu ul li.active a .icon {
+  transform: translateY(-32px);
+}
+#menu ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+#menu ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(0px);
+}
+#menu ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(70px);
+}
+#menu ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(140px);
+}
+#menu ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(210px);
+}
+#menu ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(280px);
+}
+#menu .indicator {
+  position: absolute;
+  top: -50%;
+  width: 70px;
+  height: 70px;
+  background: rgb(194, 184,  42);
+  border-radius: 50%;
+  border: 6px solid whitesmoke ;
+  transition: 0.5s;
+}
+#menu .indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -10px 0 0 whitesmoke ;
+  background: transparent;
+}
+#menu .indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 0px -10px 0 0 whitesmoke;
+  background: transparent;
+}
+nav {
+  background-image: url('../img/BACK1-Home.jfif') ;
+  background-repeat: repeat-x;
+  background-size: contain;
+  min-height: fit-content;
+  width: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#social_media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2rem;
+}
+#social_media .icon2 {
+  font-size: 3em;
+  color: var(--clr);
+  display: block;
+  margin-top: -1.5rem;
+  transition: 1.3s;
+}
+#social_media .icon2:hover {
+  font-size: 3em;
+  color: var(--clr);
+  display: block;
+  margin-top: -1.5rem;
+  transform: scale(1.2) translateY(1rem);
+}
+#logo {
+  background-image: url('../img/images.jfif');
+  height: 5rem;
+  width: 5rem;
+  background-blend-mode: hard-light;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  margin: .1rem 1rem -1rem 1rem;
+}
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: #333333;
+  }
+  
+  a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #222327;
+    -webkit-transition: color 200ms;
+    transition: color 200ms;
+  }
+  
+  a:hover {
+    color: rgb(194, 184,  42);
+  }
+  
+  .header {
+    height: 130vh;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f3e7e9), color-stop(99%, #e3eeff), to(#e3eeff));
+    background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+    overflow: hidden;
+  }
+  
+  .login-box {
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-color: white;
+    width: 400px;
+    -webkit-box-shadow: 0 25px 35px rgba(183, 33, 255, 0.15);
+            box-shadow: 0 25px 35px rgba(183, 33, 255, 0.15);
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding:6vh 5vh 7vh;
+    border-radius: 10px;
+    height: 52rem;
+    
+  }
+  
+  .login-box h2 {
+    margin: 0 0 0.9vh;
+    font-size: 1.4rem;
+    color: #4d4d4d;
+  }
+  
+  .login-box p {
+    margin: 0 0 3vh;
+    font-size: 0.8rem;
+    color: #999999;
+  }
+  
+  .form .form--input-box {
+    position: relative;
+    text-align: left;
+    margin: 0 0 3vh;
+  }
+  
+  .form .form--input-box::after, .form .form--input-box::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .form .form--input-box::before {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgb(194, 184,  42)), color-stop(99%, #222327), to(#222327));
+    background-image: linear-gradient(to right, rgb(194, 184,  42) 0%, #222327 99%, #222327 100%);
+    right: 100%;
+    z-index: 2;
+    -webkit-transition: right 500ms;
+    transition: right 500ms;
+  }
+  
+  .form .form--input-box input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    font-size: 1.2rem;
+    line-height: 1.9;
+    outline: transparent;
+    margin-top: 5vh;
+  }
+  
+  .form .form--input-box label {
+    position: absolute;
+    top: 23px;
+    font-size: 1rem;
+    cursor: pointer;
+    -webkit-transition: top 200ms, font-size 200ms;
+    transition: top 200ms, font-size 200ms;
+  }
+  
+  .form .form--input-box.focused::before {
+    right: 0;
+  }
+  
+  .form .form--input-box.focused:not(.active) label {
+    top: 0;
+    font-size: 0.7rem;
+  }
+  
+  .form .form--input-box.active label {
+    top: 0;
+    font-size: 0.7rem;
+  }
+  
+
+  
+  .button {
+    border: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgb(194, 184,  42)), color-stop(99%, #222327), to(#222327));
+    background-image: linear-gradient(to right, rgb(194, 184,  42) 0%, #222327 99%, #222327 100%);
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 6vh;
+    line-height: 2.5;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 6vh;
+    outline: transparent;
+    -webkit-box-shadow: 0 5px 10px rgba(183, 33, 255, 0.2);
+            box-shadow: 0 5px 10px rgba(183, 33, 255, 0.2);
+  }
+  
+  .button--block {
+    display: block;
+    width: 100%;
+  }
+  footer {
+    background-color: var(--clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: .5rem;
+    font-size: 0.8rem;
+  }
+  #fmenu {
+    overflow: hidden;
+    margin: .5 rem;
+  }
+  #fmenu a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+  }
+  
+  #fmenu a.active {
+    background-color:rgb(194, 184,  42);
+    color: white;
+  }
+  #ftext {
+    color: var(--back);
+  }

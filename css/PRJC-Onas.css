@@ -1,0 +1,444 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --clr: #222327;
+  --back: rgb(233, 223, 223);
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--back);
+}
+#menu {
+  width: 400px;
+  height: 70px;
+  background: var(--clr);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  border-radius: 10px;
+  margin: 2rem auto 2rem auto;
+}
+#menu ul {
+  display: flex;
+  width: 350px;
+}
+#menu ul li {
+  position: relative;
+  list-style: none;
+  width: 70px;
+  height: 70px;
+  z-index: 1;
+}
+#menu ul li a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+}
+#menu ul li a .icon {
+  position: relative;
+  display: block;
+  line-height: 75px;
+  font-size: 1.5em;
+  text-align: center;
+  transition: 0.5s;
+  color: var(--back);
+}
+#menu ul li a .text {
+  position: absolute;
+  color: var(--back);
+  font-weight: 400;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(20px);
+}
+#menu ul li.active a .icon {
+  transform: translateY(-32px);
+}
+#menu ul li.active a .text {
+  opacity: 1;
+  transform: translateY(10px);
+}
+#menu ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(0px);
+}
+#menu ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(70px);
+}
+#menu ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(140px);
+}
+#menu ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(210px);
+}
+#menu ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(280px);
+}
+#menu .indicator {
+  position: absolute;
+  top: -50%;
+  width: 70px;
+  height: 70px;
+  background: rgb(194, 184,  42);
+  border-radius: 50%;
+  border: 6px solid whitesmoke ;
+  transition: 0.5s;
+}
+#menu .indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -22px;
+  width: 20px;
+  height: 20px;
+  border-top-right-radius: 20px;
+  box-shadow: 0px -10px 0 0 whitesmoke ;
+  background: transparent;
+}
+#menu .indicator::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -22px;
+  width: 20px;
+  height: 20px;
+  border-top-left-radius: 20px;
+  box-shadow: 0px -10px 0 0 whitesmoke;
+  background: transparent;
+}
+nav {
+  background-image: url('../img/BACK1-Home.jfif') ;
+  background-repeat: repeat-x;
+  background-size: contain;
+  min-height: fit-content;
+  width: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#social_media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2rem;
+}
+#social_media .icon2 {
+  font-size: 3em;
+  color: var(--clr);
+  display: block;
+  margin-top: -1.5rem;
+  transition: 1.3s;
+}
+#social_media .icon2:hover {
+  font-size: 3em;
+  color: var(--clr);
+  display: block;
+  margin-top: -1.5rem;
+  transform: scale(1.2) translateY(1rem);
+}
+#logo {
+  background-image: url('../img/images.jfif');
+  height: 5rem;
+  width: 5rem;
+  background-blend-mode: hard-light;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 1rem;
+  margin: .1rem 1rem -1rem 1rem;
+}
+.container
+{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    background: rgb(233,223,223);
+    background: radial-gradient(circle, rgba(233,223,223,1) 29%, rgba(34,35,39,1) 100%);
+    margin: 50px;
+    -webkit-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2%;
+}
+.container .top
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 40px;
+    padding-bottom: 0;
+}
+.container .top .imgBx
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.container .top .imgBx .box
+{
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    aspect-ratio: 1;
+}
+.container .top .imgBx .box img
+{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .top .profileText
+{
+    position: relative;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+}
+.container .top .profileText h3
+{
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    line-height: 1.2em;
+    font-weight: 600;
+    color: #333;
+}
+.container .top .profileText h3 span
+{
+    position: relative;
+    font-size: 0.5em;
+    font-weight: 300;
+    top: -10px;
+}
+.container .contentBox
+{
+    position: relative;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 0 40px 40px;
+}
+.container .contentBox h3
+{
+    border-left: 4px solid #ff8bb3;
+    padding-left: 10px;
+    line-height: 1em;
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.container .contentBox ul
+{
+    position: relative;
+    margin: 10px 0;
+}
+.container .contentBox ul li
+{
+    list-style: none;
+    margin: 25px 0;
+    line-height: 1em;
+    color: #333;
+    cursor: pointer;
+    display: flex;
+}
+.container .contentBox ul li ion-icon
+{
+    font-size: 1.2em;
+    margin-right: 10px;
+    color: #3590d2;
+}
+.container .contentBox ul.education li
+{
+    flex-direction: column;
+    margin: 25px;
+}
+h5
+{
+    color: #3590d2
+}
+h4
+{
+    color: #333;
+    font-weight: 500;
+    margin: 5px 0;
+}
+h6
+{
+    color: #666;
+    font-weight: 300;
+    font-size: 1em;
+}
+.language li
+{
+    flex-direction: column;
+}
+.language li span
+{
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+}
+.language .percent
+{
+    position: relative;
+    width: 100%;
+    background: #e3e3e3;
+    height: 6px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: block;
+    overflow: hidden;
+}
+.language .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+}
+.container .contentBox ul.interest
+{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.container .contentBox ul.interest li
+{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.container .contentBox ul.interest li .icon
+{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: #3590d2;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .contentBox ul.interest li .icon ion-icon
+{
+    color: #fff;
+    margin-right: 0;
+}
+p
+{
+    font-style: 300;
+}
+.rightSide
+{
+    padding-left: 40px;
+}
+.about .box
+{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+.about .box .year_company
+{
+    min-width: 150px;
+    margin-bottom: 10px;
+}
+.about .box .year_company h5
+{
+    color: #333;
+    font-weight: 600;
+}
+.about .box .year_company h5:nth-child(1)
+{
+    color: #3590d2;
+}
+.about .box .text h4
+{
+    color: #3590d2;
+    font-weight: 16px;
+    margin: 0;
+}
+.about.skills .box
+{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.about.skills .box h4
+{
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.about.skills .box .percent
+{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    background: #e3e3e3;
+}
+.about.skills .box .percent div
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #3590d2;
+}
+footer {
+  background-color: var(--clr);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: .5rem;
+  font-size: 0.8rem;
+}
+#fmenu {
+  overflow: hidden;
+  margin: .5 rem;
+}
+#fmenu a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+
+#fmenu a.active {
+  background-color:rgb(194, 184,  42);
+  color: white;
+}
+#ftext {
+  color: var(--back);
+}
